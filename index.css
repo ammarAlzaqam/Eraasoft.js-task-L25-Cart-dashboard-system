@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#home {
+  .products {
+    background: url(https://img.freepik.com/free-photo/aesthetic-product-backdrop-palm-leaves_53876-145560.jpg?semt=ais_hybrid&w=740&q=80)
+      center/cover;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: white;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgb(75, 75, 75);
+      border: 2px solid white;
+    }
+
+    .search-wrapper {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        right: 10%;
+        width: 10px;
+        height: 48px;
+        background-color: transparent;
+        box-shadow: inset 1px 17px 10px 1px #212612;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 10%;
+        width: 10px;
+        height: 48px;
+        background-color: transparent;
+        box-shadow: inset 1px 17px 10px 1px #212612;
+      }
+
+      i {
+        font-size: 18px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 12px;
+        z-index: 10;
+      }
+    }
+  }
+
+  .cart {
+    background: url(https://img.freepik.com/premium-vector/realistic-detailed-3d-metallic-supermarket-cart-seamless-pattern-background-white-purchase-basket-supermarket-market-retail-vector-illustration-trolley_287964-5761.jpg?semt=ais_rp_50_assets&w=740&q=80)
+      center/contain;
+
+    .overlay {
+      background-color: rgba(74, 74, 74, 0.2);
+
+      h1 {
+        text-shadow:
+          1px 1px 1px black,
+          2px 2px 2px black;
+      }
+    }
+  }
+}
+
+.linkToDashboard {
+  bottom: 1rem;
+  right: 1rem;
+
+  a.btn {
+    aspect-ratio: 1/1;
+    padding: 8px;
+
+    i {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+i {
+  margin: 0;
+  padding: 0;
+}
